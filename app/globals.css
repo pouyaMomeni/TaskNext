@@ -1,27 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+    font-family: OpenSans;
+    src: url('./_assets/fonts/OpenSans_SemiCondensed-Medium.ttf');
+}
+body{
+    font-family: OpenSans;
+}
+.boxShadow{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.bgGradient{
+    background: linear-gradient(to right,#e9ecef, #f8f9fa);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.grow {
+    transition: transform .5s; 
   }
+  
+.grow:hover {
+    transform: scale(1.01); 
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+.decorationUrl:hover{
+    text-decoration: underline;
+}
+.form-post{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%; 
+    padding: 1.2rem;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }

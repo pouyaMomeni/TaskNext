@@ -1,0 +1,16 @@
+.myButton{
+    width: 6rem;
+    height: 2.5rem;
+    padding: 1rem;
+    border-radius: 15px;
+    background: #adb5bd;
+    color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.myButton:hover{
+    background: #d8d9da;
+}
