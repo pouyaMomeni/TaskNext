@@ -42,3 +42,5 @@ export default function Home() {
    </Box>
   );
 }
+
+export const revalidate = 10 // revalidate at most every 10 sec
